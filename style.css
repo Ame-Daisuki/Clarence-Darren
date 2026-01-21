@@ -1,0 +1,119 @@
+/* Body and general styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Buttons Navigation */
+nav {
+  text-align: center;
+  padding: 15px;
+  background-color: #6a5acd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav button {
+  background-color: #6a5acd;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+nav button:hover {
+  background-color: #483d8b;
+}
+
+/* Sections */
+section {
+  display: none; /* all sections hidden by default, JS shows one */
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #6a5acd;
+  color: white;
+}
+
+/* ICT Outputs & Gallery */
+#outputs {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 200px;
+  border-radius: 8px;
+}
+
+/* Figure captions */
+.gallery figure {
+  margin: 0;
+  text-align: center;
+  width: 200px;
+}
+
+.gallery figure figcaption {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+/* Photo Editing Activity side by side */
+.photo-editing-activity {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* stack on small screens */
+}
+
+.photo-editing-activity figure {
+  width: 200px;
+}
+
+/* About section image */
+.about-img {
+  width: 200px;
+  border-radius: 8px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .gallery figure,
+  .photo-editing-activity figure {
+    width: 100%;
+  }
+
+  nav button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

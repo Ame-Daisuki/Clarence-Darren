@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Digital Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Our Digital Portfolio</h1>
+    <p>Showcasing Our Digital Skills and Online Identity Responsibly</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('citizenship')">Digital Citizenship</button>
+    <button onclick="showSection('outputs')">ICT Outputs</button>
+    <button onclick="showSection('web')">Web Dev</button>
+    <button onclick="showSection('video')">Video</button>
+    <button onclick="showSection('reflection')">Reflection</button>
+    <button onclick="showSection('references')">References</button>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Hello! We, Baylon and Jumarang, are Grade 12 students in Our Lady Of Lourdes College Foundation under academic strand of Science Technology Engineering and Mathematics taking the subject of Empowerment Technology.
+      This digital portfolio showcases our skills, creativity, and responsible
+      use of information and communication technology.
+   
+     <div class="gallery">
+    <img src="https://i.ibb.co/v6dzrDQv/received-1258922401742973.jpg " alt="My Photo" class="about-img">
+
+    </p>
+  </section>
+  
+  
+  <section id="citizenship">
+    <h2>Digital Citizenship Reflection</h2>
+    <p>
+      Being a responsible digital citizen means they think before clicking, posting, or sharing online. They protect their personal information by using strong and personal passwords, adjusting privacy settings, and avoiding suspicious links or fake websites to avoid viruses and hackers. They show respect and kindness in online interactions by avoiding cyberbullying, hate speech, curse words, and harmful comments. Responsible digital citizens also practice digital ethics by respecting copyright, giving credit to sources, and not spreading misinformation or fake news. Overall, being a responsible digital citizen means using technology in a way that is safe, respectful, and beneficial to oneself and the online community. We practice online safety by protecting
+      our personal information, respecting others online, and thinking
+      critically before sharing content.
+      
+      "Digital Citizenship is not only about using technology, but about using it responsibly, ethically, and respectfully"
+    </p>
+  </section>
+
+  <section id="outputs">
+    <h2>ICT Outputs</h2>
+    <p>Below are our infographics, edited photos, and graphic design activities.</p>
+    <div class="gallery">
+
+  <!-- Responsible Use of ICT Infographic -->
+  <figure>
+    <img src="https://i.ibb.co/BVcDDhpk/White-and-Blue-Modern-Cyber-Security-Infographic-20260118-225607-0000.png" alt="Infographic on Responsible Use of ICT">
+    <figcaption>Responsible Use of ICT Infographic</figcaption>
+  </figure>
+
+  <!-- Online Safety Tips Infographic -->
+  <figure>
+    <img src="https://i.ibb.co/yz4zmBz/Benefits-of-Digital-Infographic-20260118-230821-0000.png" alt="Infographic on online safety tips for students">
+    <figcaption>Online Safety Tips Infographic</figcaption>
+  </figure>
+
+  <!-- Photo Editing Activity Side by Side -->
+  <div class="photo-editing-activity">
+    <figure>
+      <img src="https://i.ibb.co/HWWVY2K/Messenger-creation-E1416-C90-5-F2-E-487-A-8048-100-EFE61-BA80.jpg " alt="Original Photo Editing Activity">
+      <figcaption>Before Editing</figcaption>
+    </figure>
+    <figure>
+      <img src=" https://i.ibb.co/DPCxJDWW/Messenger-creation-9-BA4-B2-B0-BFB9-4378-B44-C-B76-B83-EB3825.jpg" alt="Edited Photo Editing Activity">
+      <figcaption>After Editing</figcaption>
+    </figure>
+  </div>
+
+  <!-- Graphic Design Exercise -->
+  <figure>
+    <img src="graphic-design-image-link.jpg" alt="Graphic Design Exercise">
+    <figcaption>Graphic Design Exercise</figcaption>
+  </figure>
+
+
+  </div>
+
+</section>
+
+  <section id="web">
+    <h2>Web Development Activities</h2>
+    <p>
+      This section shows my basic HTML and CSS activities created during
+      Empowerment Technology classes.
+    </p>
+  </section>
+
+  <section id="video">
+    <h2>Video Presentation</h2>
+    <p>
+      My video presentation discusses an ICT concept or advocacy related
+      to responsible technology use.
+    </p>
+  </section>
+
+  <section id="reflection">
+    <h2>Learning Reflection</h2>
+    <p>
+      Throughout this semester, I learned how ICT can be used creatively
+      and responsibly. Creating this portfolio helped me improve my
+      technical skills and digital awareness.
+    </p>
+  </section>
+
+  <section id="references">
+    <h2>References</h2>
+    <ul>
+      <li>DepEd. (n.d.). Empowerment Technologies Curriculum Guide</li>
+      <li>Common Sense Media – Digital Citizenship</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2026 My Digital Portfolio</p>
+  </footer>
+
+    <!-- JavaScript for buttons -->
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(sec => sec.style.display = 'none');
+      document.getElementById(sectionId).style.display = 'block';
+    }
+
+    // Show About section by default
+    showSection('about');
+  </script>
+
+</body>
+</html>
+
